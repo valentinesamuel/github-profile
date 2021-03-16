@@ -13,13 +13,13 @@ body {
 .card {
   height: 100vh;
   display: flex;
+  justify-content: center;
 
   .form {
     margin-left: auto;
     margin-right: auto;
     align-self: center;
     padding: 20px;
- 
 
     .enter-username {
       font-size: 1.6rem;
@@ -76,4 +76,65 @@ svg {
   align-items: center;
   display: flex;
   margin-bottom: 10px;
+}
+
+.user-card {
+  align-items: center;
+  #svgee {
+    display: block;
+    margin: 0 0;
+    margin-bottom: 10px;
+  }
+  width: fit-content;
+  // background-color: rgb(229, 234, 238);
+  padding: 30px;
+  align-self: left;
+  #user-name {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    list-style-type: none;
+    li {
+      margin-right: 30px;
+    }
+  }
+
+  #bio {
+    max-width: 700px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(174, 174, 174);
+    margin: 10px 0;
+  }
+  .repo-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    .link {
+      margin-right: 10px;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      p {
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        background-color: rgb(64, 64, 243);
+        padding: 0.5rem;
+        border-radius: 5px;
+        width: fit-content;
+      }
+    }
+  }
 }

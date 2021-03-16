@@ -15,6 +15,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card .form {
@@ -88,5 +91,83 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
+}
+
+.user-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+}
+
+.user-card #svgee {
+  display: block;
+  margin: 0 0;
+  margin-bottom: 10px;
+}
+
+.user-card #user-name {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.user-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.user-card ul li {
+  margin-right: 30px;
+}
+
+.user-card #bio {
+  max-width: 700px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.user-card .line {
+  height: 1px;
+  width: 100%;
+  background-color: #aeaeae;
+  margin: 10px 0;
+}
+
+.user-card .repo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-card .repo-section .link {
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.user-card .repo-section .link p {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #4040f3;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=styles.css.map */
