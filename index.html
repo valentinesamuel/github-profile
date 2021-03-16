@@ -9,13 +9,14 @@
   </head>
   <body>
     <div class="card">
-      <div class="form">
+      <div class="form" id="form">
+        <!-- Entering the username START -->
         <svg
           viewBox="0 0 100 100"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >
-           <defs>
+          <defs>
             <pattern
               id="img"
               patternUnits="userSpaceOnUse"
@@ -29,14 +30,17 @@
                 height="100"
               />
             </pattern>
-          </defs> 
+          </defs>
           <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
         </svg>
         <p class="enter-username">Enter Github Username</p>
         <label class="search-label" for="search">Github Username*</label>
         <input type="text" placeholder="Enter a Github username" id="search" />
         <button id="btn" class="search-button" type="submit">Find User</button>
+        <!-- Entering the username STOP -->
       </div>
+      <div class="user-card" id="userCard"></div>
+</div>
     </div>
 
     <script src="index.js"></script>
