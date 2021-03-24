@@ -80,7 +80,9 @@ svg {
 
 .user-card {
   align-items: center;
-  #svgee {
+  #svgee, img {
+    height: 100px;
+    width: 100px;
     display: block;
     margin: 0 0;
     margin-bottom: 10px;
