@@ -30,6 +30,19 @@ async function getUser(user) {
 
 }
 
+async function getRepos(user) {
+  const repoResponse = await fetch(`https://api.github.com/users/${user}/repos`);
+  const repoData = await repoResponse.json();
+  const repos = document.getElementById("repos");
+  repoData.slice(0, 6).forEach(e => {
+    const repoName = document.createElement("p")
+    const repositoryName = document.createTextNode(e.name)
+    repoName.appendChild(repositoryName);
+    repos.appendChild(repoName)
+    // console.log(repoName);
+  });
+}
+
 
 btn.addEventListener('click', (e) => {
   const mdata = search.value;
