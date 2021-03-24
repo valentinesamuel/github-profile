@@ -42,6 +42,7 @@ async function getRepos(user) {
   });
 }
 
+// Style the repos by adding display flex and other stuff
 
 btn.addEventListener('click', (e) => {
   const mdata = search.value;
