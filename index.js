@@ -39,7 +39,6 @@ async function getRepos(user) {
     const repositoryName = document.createTextNode(e.name)
     repoName.appendChild(repositoryName);
     repos.appendChild(repoName)
-    // console.log(repoName);
   });
 }
 
