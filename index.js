@@ -2,15 +2,15 @@ const btn = document.getElementById("btn");
 const search = document.getElementById("search");
 const form = document.getElementById("form");
 
-//For the second part
+
 const username = document.getElementById('username');
 const bio = document.getElementById('bio');
 
 async function getUser(user) {
-  //body
+
   const response = await fetch(`https://api.github.com/users/${user}`);
   const data = await response.json();
-  // console.log(data);
+
 
 
 
@@ -42,7 +42,7 @@ async function getRepos(user) {
   });
 }
 
-// Style the repos by adding display flex and other stuff and add other attributes like href and other styling
+
 
 btn.addEventListener('click', (e) => {
   const mdata = search.value;
