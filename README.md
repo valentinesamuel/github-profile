@@ -30,6 +30,10 @@ The user-card page contains the information about the queried username. These in
 
 Manipulating the DOM with javascript is a bit tedious work.
 
+## note
+
+Pull request and issues are welcomed
+
 ## Final thoughts
 
 This project was not easy but i am determined to finish this project. 
