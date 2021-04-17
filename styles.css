@@ -15,9 +15,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .card .form {
@@ -27,6 +24,27 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 20px;
+}
+
+.card .form .image {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .form .image img {
+  height: 100%;
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-clip-path: polygon(50% 0%, 100% 40%, 100% 70%, 50% 100%, 0% 70%, 0% 40%);
+          clip-path: polygon(50% 0%, 100% 40%, 100% 70%, 50% 100%, 0% 70%, 0% 40%);
 }
 
 .card .form .enter-username {
@@ -106,7 +124,10 @@ svg {
       align-self: left;
 }
 
-.user-card #svgee {
+.user-card #svgee,
+.user-card img {
+  height: 100px;
+  width: 100px;
   display: block;
   margin: 0 0;
   margin-bottom: 10px;
